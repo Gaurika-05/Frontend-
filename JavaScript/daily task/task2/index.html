@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Chessboard</title>
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #eee;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  border: 4px solid #333;
+}
+
+.square,.square-rev{
+  width: 60px;
+  height: 60px;
+}
+
+.square:nth-child(odd) {
+  background: #cdb399; /* light */
+}
+.square:nth-child(even) {
+  background: #d08726; /* light */
+}
+
+.square-rev:nth-child(even) {
+  background: #cdb399; /* dark */
+}
+.square-rev:nth-child(odd) {
+  background: #d08726; /* dark */
+}
+
+</style>
+</head>
+<body>
+  <div class="chessboard">
+    <!-- repeat the above 8x8 = 64 times -->
+  </div>
+  <script src="./chesss.js"></script>
+</body>
+</html>
