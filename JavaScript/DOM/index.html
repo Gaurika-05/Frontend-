@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="list items">hello</li>
+        <li class="list items">hi</li>
+        <li class="list items">bye</li>
+        <li class="list items">ok</li>
+        <li class="list items">okay</li>
+    </ul>
+     <h1 id="title">hello </h1>
+    <button id="btn">click me</button> -->
+    <!-- <script src="script.js"></script>
+</body>
+</html>  -->
+
+
+
+<div id="outer" style="padding:40px;background:#f88;">
+  Outer
+  <div id="inner" style="padding:40px;background:#8f8;">Inner</div>
+</div>
+
+<script>
+document.getElementById('outer').addEventListener('click', () => console.log('Outer bubble'));
+document.getElementById('inner').addEventListener('click', () => console.log('Inner bubble'));
+document.getElementById('outer').addEventListener('click', () => console.log('Outer capture'), true);
+</script>
+
+
+
+
